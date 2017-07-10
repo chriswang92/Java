@@ -1,10 +1,10 @@
-public static Color avgColor(Color c1, Color c2, Color c3, Color c4) {
-		int r = c1.getRed() + c2.getRed() + c3.getRed() + c4.getRed();
-		int g = c1.getGreen() + c2.getGreen() + c3.getGreen() + c4.getGreen();
-		int b = c1.getBlue() + c2.getBlue() + c3.getBlue() + c4.getBlue();
+	public static Color avgColor(Color c1, Color c2, Color c3, Color c4) {
+			int r = c1.getRed() + c2.getRed() + c3.getRed() + c4.getRed();
+			int g = c1.getGreen() + c2.getGreen() + c3.getGreen() + c4.getGreen();
+			int b = c1.getBlue() + c2.getBlue() + c3.getBlue() + c4.getBlue();
 
-		Color avg = new Color(r / 4, g / 4, b / 4);
-		return avg;
+			Color avg = new Color(r / 4, g / 4, b / 4);
+			return avg;
 	}
 
 	// will return rp:a smaller version of picture p with width = p.width()/2,
