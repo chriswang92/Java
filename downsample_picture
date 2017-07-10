@@ -1,0 +1,85 @@
+public static Color avgColor(Color c1, Color c2, Color c3, Color c4) {
+		int r = c1.getRed() + c2.getRed() + c3.getRed() + c4.getRed();
+		int g = c1.getGreen() + c2.getGreen() + c3.getGreen() + c4.getGreen();
+		int b = c1.getBlue() + c2.getBlue() + c3.getBlue() + c4.getBlue();
+
+		Color avg = new Color(r / 4, g / 4, b / 4);
+		return avg;
+	}
+
+	// will return rp:a smaller version of picture p with width = p.width()/2,
+	// height = p.height()/2
+	public static Picture reducedBy2(Picture p) {
+		// step1: create 4 new picture objects for holding 4 different part of
+		// the original picture p
+		Picture p1 = new Picture(p.width() / 2, p.height() / 2);
+		Picture p2 = new Picture(p.width() / 2, p.height() / 2);
+		Picture p3 = new Picture(p.width() / 2, p.height() / 2);
+		Picture p4 = new Picture(p.width() / 2, p.height() / 2);
+		int pw = 0, ph = 0;
+		for (int i = 0; i < p1.width(); i++) {
+			for (int j = 0; j < p1.height(); j++) {
+				pw = i;
+				ph = j;
+				p1.set(i, j, p.get(pw, ph));
+				pw = i + p1.width();
+				ph = j;
+				p2.set(i, j, p.get(pw, ph));
+				pw = i;
+				ph = j + p1.height();
+				p3.set(i, j, p.get(pw, ph));
+				pw = i + p1.width();
+				ph = j + p1.height();
+				p4.set(i, j, p.get(pw, ph));
+			}
+		}
+		/*
+		 * STEP2: for each 2x2 pixel grid in p1-p4,call avgColor to calculate
+		 * the avgColor of that 2x2 grid, and set the avgColor to the
+		 * corresponding position of the returnPicture rp
+		 */
+		Picture rp = new Picture(p.width() / 2, p.height() / 2);
+		for (int i = 0, w = 0; i < rp.width(); i = i + 2, w++) {
+			for (int j = 0, h = 0; j < rp.height(); j = j + 2, h++) {
+				rp.set(w,
+						h,
+						avgColor(p1.get(i, j), p1.get(i, j + 1),
+								p1.get(i + 1, j), p1.get(i + 1, j + 1)));
+				rp.set(w + rp.width() / 2,
+						h,
+						avgColor(p2.get(i, j), p2.get(i, j + 1),
+								p2.get(i + 1, j), p2.get(i + 1, j + 1)));
+				rp.set(w,
+						h + rp.height() / 2,
+						avgColor(p3.get(i, j), p3.get(i, j + 1),
+								p3.get(i + 1, j), p3.get(i + 1, j + 1)));
+				rp.set(w + rp.width() / 2,
+						h + rp.height() / 2,
+						avgColor(p4.get(i, j), p4.get(i, j + 1),
+								p4.get(i + 1, j), p4.get(i + 1, j + 1)));
+
+			}
+		}
+		return rp;
+	}
+
+	/**
+	 * Downsample a picture <code>n</code> times by a factor of 2 using
+	 * recursion. See the lab problem for a description of downsampling.
+	 * 
+	 * @pre the width and height of the picture are both multiples of 2 to the
+	 *      power n
+	 * 
+	 * @pre1 n is greater than or equal to zero
+	 * 
+	 * @param p
+	 *            the picture to downsample
+	 * @param n
+	 *            the number of times to downsample the picture by a factor of 2
+	 * @return the downsampled picture
+	 */
+	public static Picture downsample(Picture p, int n) {
+		if (n == 0)
+			return p;
+		return downsample(reducedBy2(p), n - 1);
+	}
