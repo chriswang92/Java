@@ -1,0 +1,119 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,Latency,IdleTime,Connect
+1518459475498,458,GET POI/version - tc1,200,OK,Thread Group 1-1,text,true,,200,282,1,1,458,0,206
+1518459476999,4073,GET POI/detect - 1 - tc2,200,OK,Thread Group 1-1,text,true,,290,337,1,1,4072,0,0
+1518459482086,269,[problem MARK AS UNTESTED] GET POI/detect - 2 - tc3,400,Bad Request,Thread Group 1-1,text,false,,264,284,1,1,269,0,110
+1518459483371,1552,GET POI/detect - 3 - tc4,200,OK,Thread Group 1-1,text,true,,5046,337,1,1,1550,0,0
+1518473858710,836,GET POI/version - tc1,200,OK,Thread Group 1-1,text,true,,200,282,1,1,834,0,718
+1518473860583,1576,GET POI/detect - 1 - tc2,200,OK,Thread Group 1-1,text,true,,290,337,1,1,1576,0,0
+1518473863201,286,[problem MARK AS UNTESTED] GET POI/detect - 2 - tc3,400,Bad Request,Thread Group 1-1,text,false,,264,284,1,1,286,0,92
+1518473864535,1699,GET POI/detect - 3 - tc4,200,OK,Thread Group 1-1,text,true,,5046,337,1,1,1699,0,0
+1518473867251,1176,GET POI/detect - hl1,200,OK,Thread Group 1-1,text,true,,5046,337,1,1,1176,0,89
+1518473869462,1471,GET POI/detect - hl2,200,OK,Thread Group 1-1,text,true,,290,337,1,1,1471,0,90
+1518473871962,234,GET POI/detect - hl3,400,Bad Request,Thread Group 1-1,text,true,,265,327,1,1,234,0,96
+1518473873235,103,GET POI/detect - hl4,400,Bad Request,Thread Group 1-1,text,true,,264,281,1,1,103,0,0
+1518473874402,194,GET POI/detect - hl5,400,Bad Request,Thread Group 1-1,text,true,,264,281,1,1,194,0,89
+1518473875619,100,GET POI - hl6,404,Not Found,Thread Group 1-1,text,true,,301,275,1,1,100,0,0
+1518473876731,993,[problem] GET POI - hl7,401,Unauthorized,Thread Group 1-1,text,false,"Test failed: text expected to contain /""message"":""no venue associated with this customer id""/",267,305,1,1,993,0,88
+1518473878809,370,GET POI/detect - hl8,401,Unauthorized,Thread Group 1-1,text,true,,267,302,1,1,370,0,90
+1518473880246,125,GET POI/detect - hl9,401,Unauthorized,Thread Group 1-1,text,true,,267,294,1,1,125,0,0
+1518473881388,209,GET POI/detect - hl10,401,Unauthorized,Thread Group 1-1,text,true,,267,294,1,1,209,0,89
+1518473882664,111,GET POI/detect - hl11,401,Unauthorized,Thread Group 1-1,text,true,,267,301,1,1,111,0,0
+1518473883784,223,GET POI/detect - hl12,401,Unauthorized,Thread Group 1-1,text,true,,267,293,1,1,223,0,91
+1518473885046,1243,GET POI/detect - p1,200,OK,Thread Group 1-1,text,true,,290,337,1,1,1243,0,0
+1518473887304,1282,GET POI/detect - p2,200,OK,Thread Group 1-1,text,true,,173,338,1,1,1282,0,90
+1518473889615,1270,[problem] GET POI/detect - p3,200,OK,Thread Group 1-1,text,false,Test failed: text expected to contain /Invalid floor value/,173,338,1,1,1270,0,91
+1518473891962,186,[problem] GET POI/detect - p4,400,Bad Request,Thread Group 1-1,,false,Response was null,134,345,1,1,186,0,90
+1518473893170,135,GET POI/detect - p5,400,Bad Request,Thread Group 1-1,text,true,,257,336,1,1,135,0,0
+1518473894335,1249,GET POI/detect - p6,200,OK,Thread Group 1-1,text,true,,290,337,1,1,1249,0,90
+1518473896606,334,GET POI/detect - p7,200,OK,Thread Group 1-1,text,true,,173,338,1,1,334,0,96
+1518473898034,226,GET POI/detect - p8,200,OK,Thread Group 1-1,text,true,,173,338,1,1,226,0,0
+1518473899304,237,[problem]GET POI/detect - p9,400,Bad Request,Thread Group 1-1,,false,Response was null,134,334,1,1,237,0,143
+1518473900607,142,GET POI/detect - p10,400,Bad Request,Thread Group 1-1,text,true,,264,328,1,1,142,0,0
+1518473901839,200,GET POI/detect - p11,400,Bad Request,Thread Group 1-1,text,true,,265,327,1,1,200,0,95
+1518473903089,1257,GET POI/detect - p12,200,OK,Thread Group 1-1,text,true,,27828,336,1,1,1168,0,0
+1518473905445,1093,GET POI/detect - p13,200,OK,Thread Group 1-1,text,true,,290,337,1,1,1093,0,89
+1518473907612,1863,[problem]GET POI/detect - p14,200,OK,Thread Group 1-1,text,false,Test failed: text expected to contain /invalid debug field value/,290,341,1,1,1863,0,90
+1518473910572,1054,[problem]GET POI/detect - p15,200,OK,Thread Group 1-1,text,false,Test failed: text expected to contain /invalid debug field value/,290,338,1,1,1054,0,88
+1518473912665,3714,GET POI/detect - p16,200,OK,Thread Group 1-1,text,true,,290,337,1,1,3714,0,88
+1518473917460,1069,GET POI/detect - p17,200,OK,Thread Group 1-1,text,true,,290,337,1,1,1068,0,90
+1518473919554,230,GET POI/detect - p18,400,Bad Request,Thread Group 1-1,text,true,,262,334,1,1,230,0,89
+1518473920814,1091,[problem]GET POI/detect - p19,200,OK,Thread Group 1-1,text,false,Test failed: text expected to contain /invalid radius field value/,173,355,1,1,1090,0,0
+1518473922976,238,[problem]GET POI/detect - p20,400,Bad Request,Thread Group 1-1,,false,Response was null,134,342,1,1,238,0,138
+1518473924240,1261,[problem]GET POI/detect - p21,200,OK,Thread Group 1-1,text,false,Test failed: text expected to contain /invalid radius field value/,173,338,1,1,1261,0,0
+0,0,,Non HTTP response code: java.lang.Error,Non HTTP response message: No entries found,Thread Group 1-1,text,false,,514,0,1,1,0,0,0
+1518474452028,588,GET POI/version - tc1,200,OK,Thread Group 1-1,text,true,,200,282,1,1,586,0,466
+1518474453671,1549,GET POI/detect - 1 - tc2,200,OK,Thread Group 1-1,text,true,,290,337,1,1,1549,0,0
+1518474456260,243,[problem MARK AS UNTESTED] GET POI/detect - 2 - tc3,400,Bad Request,Thread Group 1-1,text,false,,264,284,1,1,243,0,95
+1518474457589,1391,GET POI/detect - 3 - tc4,200,OK,Thread Group 1-1,text,true,,5046,337,1,1,1391,0,0
+1518474460037,1241,GET POI/detect - hl1,200,OK,Thread Group 1-1,text,true,,5046,337,1,1,1241,0,99
+1518474462346,1125,GET POI/detect - hl2,200,OK,Thread Group 1-1,text,true,,290,337,1,1,1125,0,80
+1518474464556,207,GET POI/detect - hl3,400,Bad Request,Thread Group 1-1,text,true,,265,327,1,1,207,0,81
+1518474465799,98,GET POI/detect - hl4,400,Bad Request,Thread Group 1-1,text,true,,264,281,1,1,98,0,0
+1518474466980,182,GET POI/detect - hl5,400,Bad Request,Thread Group 1-1,text,true,,264,281,1,1,182,0,83
+1518474468180,96,GET POI - hl6,404,Not Found,Thread Group 1-1,text,true,,301,275,1,1,96,0,0
+1518474469298,250,[problem] GET POI - hl7,401,Unauthorized,Thread Group 1-1,text,false,"Test failed: text expected to contain /""message"":""no venue associated with this customer id""/",267,305,1,1,250,0,128
+1518474470625,126,GET POI/detect - hl8,401,Unauthorized,Thread Group 1-1,text,true,,267,302,1,1,125,0,0
+1518474471851,303,GET POI/detect - hl9,401,Unauthorized,Thread Group 1-1,text,true,,267,294,1,1,303,0,85
+1518474473180,115,GET POI/detect - hl10,401,Unauthorized,Thread Group 1-1,text,true,,267,294,1,1,115,0,0
+1518474474338,237,GET POI/detect - hl11,401,Unauthorized,Thread Group 1-1,text,true,,267,301,1,1,237,0,125
+1518474475668,110,GET POI/detect - hl12,401,Unauthorized,Thread Group 1-1,text,true,,267,293,1,1,110,0,0
+1518474476797,1193,GET POI/detect - p1,200,OK,Thread Group 1-1,text,true,,290,337,1,1,1193,0,80
+1518474479076,1211,GET POI/detect - p2,200,OK,Thread Group 1-1,text,true,,173,338,1,1,1211,0,82
+1518474481307,1174,[problem] GET POI/detect - p3,200,OK,Thread Group 1-1,text,false,Test failed: text expected to contain /Invalid floor value/,173,338,1,1,1174,0,93
+1518474483521,173,[problem] GET POI/detect - p4,400,Bad Request,Thread Group 1-1,,false,Response was null,134,345,1,1,173,0,82
+1518474484721,132,GET POI/detect - p5,400,Bad Request,Thread Group 1-1,text,true,,257,336,1,1,132,0,0
+1518474485863,1110,GET POI/detect - p6,200,OK,Thread Group 1-1,text,true,,290,337,1,1,1110,0,83
+1518474488020,342,GET POI/detect - p7,200,OK,Thread Group 1-1,text,true,,173,338,1,1,342,0,79
+1518474489386,205,GET POI/detect - p8,200,OK,Thread Group 1-1,text,true,,173,338,1,1,205,0,0
+1518474490684,172,[problem]GET POI/detect - p9,400,Bad Request,Thread Group 1-1,,false,Response was null,134,334,1,1,172,0,78
+1518474491936,131,GET POI/detect - p10,400,Bad Request,Thread Group 1-1,text,true,,264,328,1,1,131,0,0
+1518474493093,173,GET POI/detect - p11,400,Bad Request,Thread Group 1-1,text,true,,265,327,1,1,173,0,86
+1518474494357,1370,GET POI/detect - p12,200,OK,Thread Group 1-1,text,true,,27822,336,1,1,1287,0,0
+1518474496765,1279,GET POI/detect - p13,200,OK,Thread Group 1-1,text,true,,290,337,1,1,1279,0,81
+1518474499094,1143,[problem]GET POI/detect - p14,200,OK,Thread Group 1-1,text,false,Test failed: text expected to contain /invalid debug field value/,290,341,1,1,1143,0,83
+1518474501336,1095,[problem]GET POI/detect - p15,200,OK,Thread Group 1-1,text,false,Test failed: text expected to contain /invalid debug field value/,290,338,1,1,1095,0,80
+1518474503471,1124,GET POI/detect - p16,200,OK,Thread Group 1-1,text,true,,290,337,1,1,1124,0,77
+1518474505623,1194,GET POI/detect - p17,200,OK,Thread Group 1-1,text,true,,290,337,1,1,1194,0,86
+1518474507866,221,GET POI/detect - p18,400,Bad Request,Thread Group 1-1,text,true,,262,334,1,1,221,0,88
+1518474509161,999,[problem]GET POI/detect - p19,200,OK,Thread Group 1-1,text,false,Test failed: text expected to contain /invalid radius field value/,173,355,1,1,999,0,0
+1518474511204,158,[problem]GET POI/detect - p20,400,Bad Request,Thread Group 1-1,,false,Response was null,134,342,1,1,158,0,72
+1518474512441,946,[problem]GET POI/detect - p21,200,OK,Thread Group 1-1,text,false,Test failed: text expected to contain /invalid radius field value/,173,338,1,1,946,0,0
+0,0,,Non HTTP response code: java.lang.Error,Non HTTP response message: No entries found,Thread Group 1-1,text,false,,514,0,1,1,0,0,0
+1518474734332,471,GET POI/version - tc1,200,OK,Thread Group 1-1,text,true,,200,282,1,1,469,0,326
+1518474735842,1181,GET POI/detect - 1 - tc2,200,OK,Thread Group 1-1,text,true,,290,337,1,1,1181,0,0
+1518474738050,236,[problem MARK AS UNTESTED] GET POI/detect - 2 - tc3,400,Bad Request,Thread Group 1-1,text,false,,264,284,1,1,236,0,94
+1518474739351,1049,GET POI/detect - 3 - tc4,200,OK,Thread Group 1-1,text,true,,5046,337,1,1,1049,0,0
+1518474741471,1088,GET POI/detect - hl1,200,OK,Thread Group 1-1,text,true,,5046,337,1,1,1088,0,89
+1518474743569,1065,GET POI/detect - hl2,200,OK,Thread Group 1-1,text,true,,290,337,1,1,1065,0,89
+1518474745686,231,GET POI/detect - hl3,400,Bad Request,Thread Group 1-1,text,true,,265,327,1,1,231,0,90
+1518474746936,101,GET POI/detect - hl4,400,Bad Request,Thread Group 1-1,text,true,,264,281,1,1,101,0,0
+1518474748112,190,GET POI/detect - hl5,400,Bad Request,Thread Group 1-1,text,true,,264,281,1,1,190,0,90
+1518474749351,103,GET POI - hl6,404,Not Found,Thread Group 1-1,text,true,,301,275,1,1,103,0,0
+1518474750487,246,[problem] GET POI - hl7,401,Unauthorized,Thread Group 1-1,text,false,"Test failed: text expected to contain /""message"":""no venue associated with this customer id""/",267,305,1,1,246,0,115
+1518474751822,111,GET POI/detect - hl8,401,Unauthorized,Thread Group 1-1,text,true,,267,302,1,1,111,0,0
+1518474753016,220,GET POI/detect - hl9,401,Unauthorized,Thread Group 1-1,text,true,,267,294,1,1,220,0,93
+1518474754254,122,GET POI/detect - hl10,401,Unauthorized,Thread Group 1-1,text,true,,267,294,1,1,122,0,0
+1518474755439,203,GET POI/detect - hl11,401,Unauthorized,Thread Group 1-1,text,true,,267,301,1,1,203,0,88
+1518474756733,123,GET POI/detect - hl12,401,Unauthorized,Thread Group 1-1,text,true,,267,293,1,1,123,0,0
+1518474757903,1160,GET POI/detect - p1,200,OK,Thread Group 1-1,text,true,,290,337,1,1,1160,0,89
+1518474760128,1232,GET POI/detect - p2,200,OK,Thread Group 1-1,text,true,,173,338,1,1,1232,0,89
+1518474762366,1177,[problem] GET POI/detect - p3,200,OK,Thread Group 1-1,text,false,Test failed: text expected to contain /Invalid floor value/,173,338,1,1,1177,0,89
+1518474764557,185,[problem] GET POI/detect - p4,400,Bad Request,Thread Group 1-1,,false,Response was null,134,345,1,1,185,0,92
+1518474765812,157,GET POI/detect - p5,400,Bad Request,Thread Group 1-1,text,true,,257,336,1,1,157,0,0
+1518474767035,1114,GET POI/detect - p6,200,OK,Thread Group 1-1,text,true,,290,337,1,1,1114,0,90
+1518474769166,299,GET POI/detect - p7,200,OK,Thread Group 1-1,text,true,,173,338,1,1,298,0,90
+1518474770485,214,GET POI/detect - p8,200,OK,Thread Group 1-1,text,true,,173,338,1,1,214,0,0
+1518474771703,185,[problem]GET POI/detect - p9,400,Bad Request,Thread Group 1-1,,false,Response was null,134,334,1,1,185,0,89
+1518474772928,145,GET POI/detect - p10,400,Bad Request,Thread Group 1-1,text,true,,264,328,1,1,145,0,0
+1518474774158,197,GET POI/detect - p11,400,Bad Request,Thread Group 1-1,text,true,,265,327,1,1,197,0,102
+1518474775424,1173,GET POI/detect - p12,200,OK,Thread Group 1-1,text,true,,27822,336,1,1,1083,0,0
+1518474777653,1046,GET POI/detect - p13,200,OK,Thread Group 1-1,text,true,,290,337,1,1,1046,0,92
+1518474779787,1091,[problem]GET POI/detect - p14,200,OK,Thread Group 1-1,text,false,Test failed: text expected to contain /invalid debug field value/,290,341,1,1,1091,0,165
+1518474781912,1294,[problem]GET POI/detect - p15,200,OK,Thread Group 1-1,text,false,Test failed: text expected to contain /invalid debug field value/,290,338,1,1,1294,0,89
+1518474784298,1294,GET POI/detect - p16,200,OK,Thread Group 1-1,text,true,,290,337,1,1,1294,0,88
+1518474786658,1127,GET POI/detect - p17,200,OK,Thread Group 1-1,text,true,,290,337,1,1,1127,0,90
+1518474788791,231,GET POI/detect - p18,400,Bad Request,Thread Group 1-1,text,true,,262,334,1,1,231,0,90
+1518474790106,1022,[problem]GET POI/detect - p19,200,OK,Thread Group 1-1,text,false,Test failed: text expected to contain /invalid radius field value/,173,355,1,1,1022,0,0
+1518474792159,180,[problem]GET POI/detect - p20,400,Bad Request,Thread Group 1-1,,false,Response was null,134,342,1,1,180,0,88
+1518474793402,1068,[problem]GET POI/detect - p21,200,OK,Thread Group 1-1,text,false,Test failed: text expected to contain /invalid radius field value/,173,338,1,1,1068,0,0
+0,0,,Non HTTP response code: java.lang.Error,Non HTTP response message: No entries found,Thread Group 1-1,text,false,,514,0,1,1,0,0,0
